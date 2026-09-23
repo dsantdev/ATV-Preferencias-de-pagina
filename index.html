@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preferências da Página</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Teste de Preferências com Local Storage</h1>
+      <p>Altere as opções abaixo e recarregue a página para validar a persistência.</p>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="Controles de preferências">
+        <label for="colorPicker">Cor de destaque</label>
+        <input type="color" id="colorPicker" value="#2563eb" />
+
+        <label for="screenMode">Modo da tela</label>
+        <select id="screenMode">
+          <option value="light">Claro</option>
+          <option value="dark">Escuro</option>
+        </select>
+
+        <label for="textSize">Tamanho do texto</label>
+        <select id="textSize">
+          <option value="small">Pequeno</option>
+          <option value="medium">Médio</option>
+          <option value="large">Grande</option>
+        </select>
+      </section>
+
+      <section class="content">
+        <h2>Área de teste</h2>
+        <p>
+          Este conteúdo serve para testar como as preferências de cor, modo e tamanho do
+          texto são aplicadas e armazenadas no navegador.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
